@@ -1,0 +1,135 @@
+/* =========================
+   General Page Styling
+   ========================= */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #222;
+}
+
+
+/* =========================
+   Header
+   ========================= */
+
+header {
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   Main Content
+   ========================= */
+
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   Upcoming Games
+   ========================= */
+
+main section > div {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+/* Game Cards */
+
+article  h3 {
+    text-decoration: underline;
+}
+
+main section > div > div {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    width: 30%;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+main section > div > div h3 {
+    margin-top: 0;
+}
+
+
+/* =========================
+   Links / Buttons
+   ========================= */
+
+main section > p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+main section > p a {
+    display: inline-block;
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+}
+
+main section > p a:hover {
+    background-color: #444;
+}
+
+
+/* =========================
+   Footer
+   ========================= */
+
+footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+
+/* =========================
+   Mobile Layout
+   ========================= */
+
+@media (max-width: 700px) {
+
+    main section > div {
+        flex-direction: column;
+    }
+
+    main section > div > div {
+        width: auto;
+    }
+
+}
